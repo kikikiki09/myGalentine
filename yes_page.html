@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knew you would say yes!</title>
+    <link rel="stylesheet" href="./yes_style.css">
+    <style>
+        /* Added CSS for the image */
+        .gif_container img {
+            width: 50%; /* Adjust the percentage as needed */
+            height: auto; /* Maintains aspect ratio */
+            max-width: 500px; /* Limits the image size */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header_text">Knew you would say yes!</h1>
+        <div class="gif_container">
+            <img src="yess.gif" alt="Said Yes Image">
+        </div>
+        <button class="reveal_button" onclick="showMessage()">Want Some Valentine Flower?</button>
+        <div class="bouquet_message" id="bouquetMessage">
+            <p>I want to take a moment to celebrate the beautiful friendship we share. 
+                <p>I feel incredibly lucky to have you by my side. hehehehe </p>
+                Your kiki loves you alotttt.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            // Display the bouquet message
+            document.getElementById('bouquetMessage').style.display = 'block';
+
+            // Change the GIF source to a new bouquet image or GIF
+            document.querySelector('.gif_container img').src = 'bouquet.gif'; // Replace with the actual bouquet GIF or image file
+
+            // Optionally, change alt text as well
+            document.querySelector('.gif_container img').alt = 'Bouquet Image';
+        }
+    </script>
+</body>
+</html>
